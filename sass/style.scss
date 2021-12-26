@@ -1,0 +1,116 @@
+@import "variables";
+@import "global";
+
+.card {
+  background: $second-bg-color;
+  width: 350px;
+  max-height: 600px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 15px 30px 15px 3px darken($first-bg-color, 1.5%),
+    -15px 30px 15px 3px darken($first-bg-color, 1.5%),
+    30px 50px 15px 3px darken($first-bg-color, 0.5%),
+    -30px 50px 15px 3px darken($first-bg-color, 0.5%);
+
+  .display {
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 98%;
+      width: 100%;
+      background: $secondary-color;
+      border-radius: 15px;
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 98%;
+      width: 100%;
+      background: url(../img/icon-view.svg) no-repeat center center;
+      opacity: 0;
+      z-index: 3;
+      transition: opacity 300ms ease;
+    }
+
+    &:hover:before {
+      opacity: 0.3;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+
+    img {
+      border-radius: 15px;
+    }
+  }
+
+  .title {
+    text-decoration: none;
+    color: $white;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    padding: 0.75rem 0;
+    border-bottom: 1px $line-color solid;
+
+    &-1,
+    &-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-1 {
+      color: $secondary-color;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .creator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+
+    &-name {
+      color: $white;
+      transition: color 300ms ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+      border: 1px $white solid;
+      border-radius: 50%;
+    }
+  }
+}
