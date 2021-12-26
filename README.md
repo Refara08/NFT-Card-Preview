@@ -1,6 +1,7 @@
 # Frontend Mentor - NFT preview card component solution
 
 This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
+I know, I'm not suppose to add Sass folder in my repository, since it wouldn't be processed on the actual website page. but I included it just to share what I actually code for the styling for the web page. Thank you.
 
 ## Table of contents
 
@@ -27,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Refara08/NFT-Card-Preview)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://github.com/Refara08/NFT-Card-Preview)
+- Live Site URL: [live site URL here](https://silly-shirley-c60068.netlify.app)
 
 ## My process
 
