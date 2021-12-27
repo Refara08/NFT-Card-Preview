@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   color: $primary-color;
   display: grid;
+  grid-template-rows: 9fr 1fr;
   place-items: center;
   height: 100vh;
 }
@@ -26,6 +27,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: $secondary-color;
 }
 
 img {
@@ -42,5 +44,37 @@ $heading: (
 @each $size, $num in $heading {
   .#{$size}-heading {
     font-size: #{$num}rem;
+  }
+}
+
+.link-page {
+  position: relative;
+  font-weight: bold;
+  padding: 0.2rem 0.3rem;
+  color: $secondary-color;
+  transition: color 300ms ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: $secondary-color;
+    transform: translateY(30%);
+    opacity: 0;
+    transition: all 300ms ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #333;
+  }
+
+  &:hover:before {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
