@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here](https://github.com/Refara08/NFT-Card-Preview)
-- Live Site URL: [live site URL here](https://silly-shirley-c60068.netlify.app)
+- Live Site URL: [live site URL here](https://refara08-nft-card-preview.pages.dev)
 
 ## My process
 
